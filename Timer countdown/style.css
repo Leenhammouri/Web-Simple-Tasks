@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --honolulu-blue: #2D79AEff;
+    --prussian-blue: #102A42ff;
+    --powder-blue: rgb(161, 176, 189);
+    --antiflash-white: #F1F5F8ff;
+    --paynes-gray: #43647Eff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--antiflash-white);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-div,
+.info-div {
+    flex: 50%;
+    margin: 10px 10px;
+    padding: 0 10px;
+}
+
+.img-div img {
+    width: 100%;
+}
+
+
+.time-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+h1 {
+    color: var(--honolulu-blue);
+    letter-spacing: 3px;
+
+}
+
+h4 {
+    color: var(--prussian-blue);
+    letter-spacing: 2px;
+}
+
+p {
+    color: var(--powder-blue);
+}
+
+.time-div div {
+    color: white;
+    background-color: var(--prussian-blue);
+    padding: 15px 15px;
+    text-align: center;
+    width: 20%;
+}
+
+.time-div div p,
+.time-div div h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+    color: white;
+
+}
+
+.time-div div h2 {
+    font-size: 30px;
+}
+
+.time-div div p {
+    font-size: 13px;
+}

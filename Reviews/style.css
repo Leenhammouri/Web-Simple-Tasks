@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    /* background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
+    background-color: #92cbf91c;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    padding: 20px 30px;
+    box-shadow: 2px 1px 10px rgba(211, 211, 211, 0.732);
+}
+
+h2 {
+    color: #1c1f25;
+    font-size: 33px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #49a6e9;
+    display: block;
+    margin-top: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.img-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.img-container::after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-color: #49a6e9;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -2%;
+    left: 37.5%;
+    z-index: 1;
+}
+
+.img-container::before {
+    content: '”';
+    width: 30px;
+    height: 30px;
+    background-color: #49a6e9;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7%;
+    left: 38%;
+    z-index: 3;
+    font-size: 55px;
+    color: white;
+    padding: 5px;
+    font-weight: 200;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.major {
+    color: #49a6e9;
+    margin-top: 7px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.review {
+    font-size: 15px;
+    color: #7a91a8;
+}
+
+i {
+    font-size: 25px;
+    margin: 10px;
+    color: #92cbf9;
+}
+
+#Surprise {
+    color: #49a6e9;
+    padding: 5px 10px;
+    border: 2px outset #49a6e9;
+    background-color: #ebf7ff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#next,
+#prev {
+    background: none;
+    border: none;
+}
